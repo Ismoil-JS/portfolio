@@ -49,7 +49,7 @@
                         <h1>Ismoil</h1>
                         <h3>Web Developer</h3>
                         <div class="cv-btn">
-                            <a href="">Start</a>
+                            <a onclick="downloadFile()">Download Resume</a>
                         </div>
                     </div>
                 </div>
@@ -455,6 +455,16 @@
             var s = document.createElement('script'); s.async = true; s.src = u;
             var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
         })('https://widget.replain.cc/dist/client.js');
+    </script>
+    <script>
+        function downloadFile() {
+            var link = document.createElement('a');
+            link.href = "./resume/resume.pdf"; // Replace '/path/to/file' with the relative path to your file
+
+            link.download = "Ismoil Turgunpulatov's Resume"; // Replace 'filename' with the desired file name
+
+            link.click();
+        }
     </script>
 
     <script src="./js/script.js"></script>

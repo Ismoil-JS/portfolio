@@ -996,6 +996,10 @@ footer .social a:hover {
         max-width: 100%;
     }
 
+    .cv-btn a {
+        border: 1px solid #febd01 !important;
+        color: #febd01 !important;
+    }
 }
 
 @media (max-width: 500px) {
